@@ -560,6 +560,12 @@ CARES_EXTERN int ares_parse_a_reply(const unsigned char *abuf,
                                     struct ares_addrttl *addrttls,
                                     int *naddrttls);
 
+CARES_EXTERN int ares_parse_a_reply_ext(const unsigned char *abuf,
+                                        int alen,
+                                        struct hostent **host,
+                                        struct ares_addrttl *addrttls,
+                                        int *naddrttls);
+
 CARES_EXTERN int ares_parse_aaaa_reply(const unsigned char *abuf,
                                        int alen,
                                        struct hostent **host,
